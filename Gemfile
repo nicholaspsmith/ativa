@@ -54,5 +54,7 @@ end
 
 gem 'devise'
 
+gem 'hirb'
+
 
 
