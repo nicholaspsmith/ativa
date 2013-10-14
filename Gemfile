@@ -56,5 +56,7 @@ gem 'devise'
 
 gem 'hirb'
 
+gem 'html2haml'
+
 
 
