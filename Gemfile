@@ -47,3 +47,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+
+# My Gems
+
+gem 'devise'
+
+
+
