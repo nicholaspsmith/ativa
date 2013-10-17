@@ -10,7 +10,7 @@ gem 'rails', '4.0.0'
 
 gem 'carrierwave'
 
-gem 'rmagick'
+# gem 'rmagick'
 
 gem 'pry'
 
