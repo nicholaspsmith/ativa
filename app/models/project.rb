@@ -11,4 +11,5 @@ class Project < ActiveRecord::Base
     self.phase_id = Phase.first.id
   end
 
+
 end

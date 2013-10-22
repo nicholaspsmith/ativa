@@ -5,7 +5,7 @@ Ativa::Application.routes.draw do
 
   root 'projects#index'
 
-  resources :project do
+  resources :projects do
     resources :subscriptions, only: [:create, :destroy]
   end
 
