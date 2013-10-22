@@ -7,8 +7,12 @@ class Post < ActiveRecord::Base
 
   mount_uploader :attachment, ImageUploader
 
-  def snippet(length=300)
-    message.truncate length
+  def snippet(options = {})
+    if options[:length]
+      message.truncate options[:length]
+    else
+      message.truncate 300
+    end
   end
 
   private
@@ -17,5 +21,5 @@ class Post < ActiveRecord::Base
       if self.title == "" then self.title = "Post #{rand(255)}" end
       if self.message == "" then self.message = "(no message)" end
     end
-
+  
 end
